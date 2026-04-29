@@ -1,0 +1,15 @@
+{
+	"name": "myprojectrradf",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "662792fa-fec0-40f2-8902-35942dc3750f",
+		"tenantId": "86d9c3b6-cdf5-4a03-9d20-cca2812d2137"
+	}
+}
