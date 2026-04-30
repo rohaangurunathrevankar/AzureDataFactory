@@ -120,7 +120,7 @@
 											"type": "DatasetReference",
 											"parameters": {
 												"p_file": {
-													"value": "@{item().file}.json",
+													"value": "@item().file",
 													"type": "Expression"
 												}
 											}
@@ -132,7 +132,7 @@
 											"type": "DatasetReference",
 											"parameters": {
 												"p_file": {
-													"value": "@{item().file}.json",
+													"value": "@item().file",
 													"type": "Expression"
 												}
 											}
@@ -205,7 +205,7 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": {
-							"value": "rohaangurunathrevankar/AzureDataFactory/refs/heads/main/Data/{@dataset().p_file}",
+							"value": "rohaangurunathrevankar/AzureDataFactory/refs/heads/main/Data/@{dataset().p_file}",
 							"type": "Expression"
 						}
 					}
@@ -236,7 +236,7 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": {
-							"value": "{@dataset().p_file}.json",
+							"value": "@{dataset().p_file}.json",
 							"type": "Expression"
 						},
 						"folderPath": "ingestion",
